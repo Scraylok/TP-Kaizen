@@ -1,10 +1,17 @@
 .banner{
-   display: flex;
-   justify-content: center;
+   width: 100%;
+   padding: 9rem 3rem;
+   background: url(./Resources/Bannerkaizen.jpg);
+   background-color: rgba(0, 0, 0, .3);
+   background-blend-mode: soft-light;
+   background-size: cover;
+   background-position: top;
+   box-sizing: border-box;
+
 
 }
 .banner h1{
-   margin: 10px;
+   color: whitesmoke;
 }
 .noticias{
    display: flex;
@@ -14,34 +21,36 @@
 
   background-color: indianred;
 }
-.forma__principal{
-   
-   height: 100;
-   width: 100;
-   background-color: grey;
-   align-content: center;
+
    
 
-}
 
-/* Menu */
+
+
+/* ------------------- Menu Header ------------------------*/
 nav ul li:hover{
    background-color: rgb(0, 255, 179);
 }
-.header{
-   position: sticky;
- 
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 15px;
-   background-color: #7e7e7ed4;
-   border-radius: 10px;
 
+.contenedor 
+{
+ width: 100%;
+ height: 60px;
+ background: rgba(65, 65, 65, 0.432);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0px;
+ box-sizing: border-box;
+ position: sticky;
+ top: 0px;
+ border-radius: 10px;
 }
+
 .header__lista{
    display: flex;
    justify-content: space-evenly;
+   align-content: center;
    width: 75%;
 }
 .header__link{
@@ -64,10 +73,14 @@ list-style-type: none;
    width: 150px;
    height: 100px;
 }
+
+/* ----------------------  Footer  -----------------------*/
 .fondo_body{
    background: rgba(185, 185, 185, 0.705);
    width: 100%;
-   height: 100vh;
+   height: 200vh;
+   border-radius: 5px;
+   
    
 }
 
@@ -79,11 +92,107 @@ list-style-type: none;
    width: auto;
    height: 10vh;
    border-radius: 10px;
+   margin-top: 100px;
 }
-.redes_sociales{
-   width: 50px;
-   height: 50px;
+.footer__redessociales{
+display: flex;
+justify-content: space-between;
+align-content: center;
+height: 50px;
+width: 50px;
+padding: 10px;
 }
+/*--------------------------  Asides  -------------------------*/
+
+
+.aside__derecho
+{
+  margin-left: auto;
+   display: flex;
+   align-content: center;
+   justify-content: right;
+   height: 500px;
+   width: 150px;
+   background-color: rgb(169, 253, 204);
+   border-radius: 10px;
+   position: sticky;
+   right: 0px;
+   
+
+   
+ }
+ 
+ .aside__izquierdo
+ {
+    height: 300vh;
+    width: 150px;
+    background-color: lightgreen;
+ }
+
+
+/* ---------------------Titulos,subtitulos y textos--------------*/
+
+.titulo{
+
+   display: flex;
+   font-size: 36px;
+   
+   justify-content: center;
+   align-content: center;
+
+}
+
+.subtitulo
+{
+   display: flex;
+   font-size: 25px;
+   
+   justify-content: center;
+   align-content: center;
+   margin: 10px;
+
+}
+.texto 
+{
+   display: flex;
+   font-size: 20px;
+   color: black;
+}
+
+/*boxes de formularios*/
+.boxes 
+{
+   display: flex;
+   font-size: 15px;
+   
+   justify-content: center;
+   align-content: center;
+
+}
+.boxes__grande
+{
+   display: flex;
+   height: 75px;
+   width: 75;
+   
+   
+   margin: 10px;
+}
+
+/*---------------- Botones -----------*/
+.boton__login
+{
+display: flex;
+justify-content: center;
+align-content: center;
+margin-top: 50px;
+height: auto;
+width: auto;
+
+}
+
+/*---- Estilo Biblioteca de juegos ----*/
+
 /*biblioteca de juegos*/
 .juegos{
    display: flex;
@@ -107,7 +216,7 @@ list-style-type: none;
 }
 /*columna de juegos*/
 .juegos_orden{
-   background-color: rgba(95, 93, 93, 0.582);
+   background: rgba(185, 185, 185, 0.705);
    display: flex;
    flex-wrap: wrap;
    flex-direction: column;
@@ -150,44 +259,87 @@ list-style-type: none;
    font-family: 'Times New Roman', Times, serif;
 
 }
+/*------------------- Estilo Foro ---------------*/
+
+/*---------------- Estilo Registro ------------------*/
+
+#posicion__formulario {
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-content: center;
+   background: rgba(185, 185, 185, 0.705);
+   height: 500px;
+   width: 500px;
+padding: 75px 50px 100px;
+
+margin: auto;
+border-radius: 10px;
 
 
-/*nav ul {
-   position: fixed;
-   top: 45px;
-   background-color: beige;
 }
-nav ul li{
-   display: inline;
-   
+
+
+
+
+
+/*------------------- Estilo acerca de nosotros ------------------*/
+#posicion__nosotros {
+   display: flex;
+   flex-direction: column;
+   align-content: center;
+   justify-content: center;
+   padding: 50px;
 }
-.fondo_noticias{
-   top: 10px;
-   width: 500;
-   height: 250;
-   background-color: red;
+.logo__kaizen {
+   display: flex;
+   align-content: flex-end;
+   justify-content: left;
+   height: 15%;
+   width: 20%;
+   background-blend-mode: soft-light;
+
 }
-.fondo{margin: auto;
-            width: auto;
-            height: 1000px;
-            background-color:grey;
-         }
-.background_header{margin: auto;
-             width: auto;
-             height: auto;
-             position: sticky;
-             top: 10px;
-   background-color: blanchedalmond;
+
+/*------------------ Estilo soporte ----------------------*/
+
+#posicion__soporte
+{
+   display: flex;
+   justify-content: right;
+   align-content: flex-start;
+   background: rgba(185, 185, 185, 0.705);
+   height: 400px;
+   width: 400px;
+   padding: 25px;
+   margin: 100px 100px;
+   border-radius: 10px;
 }
-.Forma__botones{
-   width: auto;
+.formulario__soporte
+{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-content: center;
+
+
+}
+
+
+/*-------------------------  Estilo Log-in  --------------------*/
+
+#posicion__login
+{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-content: center;
+   background: rgba(185, 185, 185, 0.705);
    height: auto;
-   background-color: grey;
-   border-radius: 5;
+   width: 300px;
+padding: 100px 100px;
+margin: auto;
+border-radius: 10px;
 }
-.Aside_Index{
-   width: 200;
-   height: 300;
-   left: -50;
-   background-color: beige;
-}*/

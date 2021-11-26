@@ -4,36 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Estilos.css">
     <title>Acceder a la cuenta</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../Paginas/nosotros.html">Nosotros</a></li>
-                <li><a href="../Paginas/juegos.html">Juegos</a></li>
-                <li><a href="../Paginas/foro.html">Foro</a></li>
-                <li><a href="../Paginas/soporte.html">Soporte</a></li>
-                <li><a href="../Paginas/Registro.html">Registrarse</a></li>
-                <li><a href="../Paginas/Log-in.html">Log-in</a></li>
+    <header class="contenedor">
+        <nav class="contenedor">
+            <img class="header__logo" src="../Resources/Kaizen.png" alt="">
+            <ul class="header__lista">
+                <li class="header__link"><a href="../index.html">Inicio</a></li>
+                <li class="header__link"><a href="../Paginas/nosotros.html">Nosotros</a></li>
+                <li class="header__link"><a href="../Paginas/juegos.html">Juegos</a></li>
+                <li class="header__link"><a href="../Paginas/foro.html">Foro</a></li>
+                <li class="header__link"><a href="../Paginas/soporte.html">Soporte</a></li>
+                <li class="header__link"><a href="../Paginas/Registro.html">Registrarse</a></li>
+                <li class="header__link"><a href="../Paginas/Log-in.html">Log-in</a></li>
                 
             </ul>
     </nav>
     </header>
     <main>
-        <form action="">
-            <h2>Inicia Sesión<h2>
-                <label for="Usuario_mail">Usuario</label>
-            <input type="text" name="Usuario_mail"  placeholder="Usuario o mail">
-            <label for="contraseña">Contraseña</label>
-            <input type="password" name="contraseña" placeholder="contraseña">
-            <input type="submit" value="Log in">
+        <form id="posicion__login" action="">
+            <h2 class="titulo">Inicia Sesión<h2>
+                <label class="subtitulo" for="Usuario_mail">Usuario</label>
+            <input class="boxes" type="text" name="Usuario_mail"  placeholder="Usuario o mail">
+            <label class="subtitulo" for="contraseña">Contraseña</label>
+            <input class="boxes" type="password" name="contraseña" placeholder="contraseña">
+            <div class="boton__login"><input type="submit" value="Log in"></div>
         
             
         </form>
     </main>
     <footer>
+        <div class="footer"> 
+            <h3>Redes sociales</h3>
+            <img class="footer__redessociales" src="../Resources/iconofacebookvector.png" alt="">
+            <img class="footer__redessociales" src="../Resources/iconoinstagram.png" alt="">
+            <img class="footer__redessociales" src="../Resources/icons8-twitter-192.png" alt="">
 
     </footer>
 </body>

@@ -4,44 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Estilos.css">
     <title>Soporte</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../Paginas/nosotros.html">Nosotros</a></li>
-                <li><a href="../Paginas/juegos.html">Juegos</a></li>
-                <li><a href="../Paginas/foro.html">Foro</a></li>
-                <li><a href="./soporte.html">Soporte</a></li>
-                <li><a href="../Paginas/Registro.html">Registrarse</a></li>
-                <li><a href="../Paginas/Log-in.html">Log-in</a></li>
+    <!--Menu-->
+    <header class="contenedor">
+        <nav class="contenedor">
+            <img class="header__logo" src="../Resources/Kaizen.png" alt="">
+            <ul class="header__lista">
+                <li class="header__link"><a href="../index.html">Inicio</a></li>
+                <li class="header__link"><a href="../Paginas/nosotros.html">Nosotros</a></li>
+                <li class="header__link"><a href="../Paginas/juegos.html">Juegos</a></li>
+                <li class="header__link"><a href="../Paginas/foro.html">Foro</a></li>
+                <li class="header__link"><a href="../Paginas/soporte.html">Soporte</a></li>
+                <li class="header__link"><a href="../Paginas/Registro.html">Registrarse</a></li>
+                <li class="header__link"><a href="../Paginas/Log-in.html">Log-in</a></li>
                 
             </ul>
     </nav>
     </header>
     <main>
-        <h1>Soporte</h1>
+        <!--Formulario para soporte-->
+        <div id="posicion__soporte"> 
+            <div class="formulario__soporte">
+                <h1>Soporte</h1>
 
-        <h3>Email</h3>
-        <label for="Contacto"></label>
-        <input type="email" name="email">
-
-        <h3>Motivo</h3>
-        <input type="text">
-
-
-        <p>Comentanos lo ocurrido y nos comunicaremos a la brevedad</p>
-
-        <label for="Comentario"></label>
-        <input type="text">
-        <input type="submit" value="Enviar">
-
+            <h3>Email</h3>
+            <label for="Contacto"></label>
+            <input type="email" name="email">
+    
+            <h3>Motivo</h3>
+            <input type="text">
+    
+    
+            <p>Comentanos lo ocurrido y nos comunicaremos a la brevedad</p>
+    
+            <label for="Comentario"></label>
+            <input class="boxes__grande" type="text">
+            <input type="submit" value="Enviar">
+            </div>
+    </div>
+        
 
     </main>
     <footer>
-        
+        <div class="footer"> 
+            <h3>Redes sociales</h3>
+            <img class="footer__redessociales" src="../Resources/iconofacebookvector.png" alt="">
+            <img class="footer__redessociales" src="../Resources/iconoinstagram.png" alt="">
+            <img class="footer__redessociales" src="../Resources/icons8-twitter-192.png" alt="">
     </footer>
 </body>
 </html>
