@@ -1,6 +1,27 @@
-.banner{
+* { margin: 0; padding: 0; }
+body {
+   background: url(./Resources/metallic_background179.jpg);
+   color: white;
+}
+.cuerpo {
+   width: 80%;
+   margin: 50px;
+
+}
+video {width: 80%;}
+
+.nuevo_imagenes
+{
+   width: 300px;
+   padding: 0%;
+   margin: 0%;
+
+}
+
+#banner{
+   /* margin: 0; padding: 0%; */
    width: 100%;
-   padding: 9rem 3rem;
+   padding: 9rem 3rem; 
    background: url(./Resources/Bannerkaizen.jpg);
    background-color: rgba(0, 0, 0, .3);
    background-blend-mode: soft-light;
@@ -13,6 +34,9 @@
 .banner h1{
    color: whitesmoke;
 }
+.texto__banner {
+   color: whitesmoke;
+}
 .noticias{
    display: flex;
    justify-content: center;
@@ -21,16 +45,19 @@
 
   background-color: indianred;
 }
-
-   
+.seccion 
+{
+   background: rgba(211, 211, 211, 0.705);
+   margin: 1%;
+   padding: 1%;
+}
 
 
 
 
 /* ------------------- Menu Header ------------------------*/
-nav ul li:hover{
-   background-color: rgb(0, 255, 179);
-}
+nav ul li:hover{background-color: #0099cc;
+   color: white;}
 
 .contenedor 
 {
@@ -43,7 +70,8 @@ nav ul li:hover{
  padding: 0px;
  box-sizing: border-box;
  position: sticky;
- top: 0px;
+ top: 10px;
+ bottom: 50px;
  border-radius: 10px;
 }
 
@@ -61,17 +89,22 @@ list-style-type: none;
 
 .header__link a{
    font-family: Arial, Helvetica, sans-serif;
-   font-size: 18px;
+   font-size: 23px;
    text-decoration: none;
    color:rgb(0, 0, 0);
-   background-color: rgba(221, 173, 39, 0.342);
-   border-radius: 10px;
+   background-color: #ff9933;
+  
+   border-radius: 7px;
    
 }
 
 .header__logo{
    width: 150px;
-   height: 100px;
+   margin: 1%
+   
+}
+.header__logo img{
+   width: 100%;
 }
 
 /* ----------------------  Footer  -----------------------*/
@@ -105,29 +138,34 @@ padding: 10px;
 /*--------------------------  Asides  -------------------------*/
 
 
-.aside__derecho
+aside
 {
-  margin-left: auto;
-   display: flex;
-   align-content: center;
-   justify-content: right;
-   height: 500px;
-   width: 150px;
-   background-color: rgb(169, 253, 204);
-   border-radius: 10px;
-   position: sticky;
-   right: 0px;
-   
+ width: 15%;
+ background: #33ffff75;
+ padding: 10px;
+ float: right;
+ height: 500px;
+ margin-right: 10px;
+ margin-top: 100px;
+border-radius: 10px;
 
-   
  }
  
- .aside__izquierdo
+ .aside_orden
  {
-    height: 300vh;
-    width: 150px;
-    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-content: space-between;
+    color: black;
+    padding: 0%;
  }
+ .aside__lista
+ {
+    justify-content: space-between;
+    
+ }
+
 
 
 /* ---------------------Titulos,subtitulos y textos--------------*/
@@ -158,6 +196,7 @@ padding: 10px;
    font-size: 20px;
    color: black;
 }
+
 
 /*boxes de formularios*/
 .boxes 
@@ -212,11 +251,11 @@ width: auto;
    margin-left: 87%;
   padding: 10px;
   border-radius: 10px;
-  background-color: rgba(10, 245, 147, 0.534);
+  background-color: #ffff33a2;
 }
 /*columna de juegos*/
 .juegos_orden{
-   background: rgba(185, 185, 185, 0.705);
+   background: #ffff33a2;
    display: flex;
    flex-wrap: wrap;
    flex-direction: column;
@@ -340,6 +379,7 @@ border-radius: 10px;
    height: auto;
    width: 300px;
 padding: 100px 100px;
-margin: auto;
+margin-top: 100px;
+margin-left: 550px;
 border-radius: 10px;
 }
