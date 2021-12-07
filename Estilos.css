@@ -1,6 +1,6 @@
-* { margin: 0; padding: 0; }
+*{ margin: 0%; padding: 0%; }
 body {
-   background: url(./Resources/metallic_background179.jpg);
+   background: url(./Resources/5053309.jpg);
    color: white;
 }
 .cuerpo {
@@ -10,16 +10,71 @@ body {
 }
 video {width: 80%;}
 
-.nuevo_imagenes
+
+/* ------Grids-------- */
+footer
 {
-   width: 300px;
-   padding: 0%;
-   margin: 0%;
+   grid-area: footer;
+}
+header {
+   grid-area: header;
+}
+#grid__foro 
+{
+   display: grid;
+   grid-template-areas: "header  header"
+   "foro  aside"
+   "posteosre  aside"
+   "footer  footer";
+   grid-template-columns: 1fr 150px;
+   grid-template-rows:100px 1fr  150px ;
+}
+.grid__template 
+{display: grid;
+   grid-template-areas: 
+   "banner banner"
+   "header header"
+   "nuevo aside"
+   "juegosdes aside"
+   "eventos aside"
+   "comunidad aside"
+   "footer footer"
+   ;
+   grid-template-columns: 1fr 150px;
+   grid-template-rows: 400px 75px 1fr 1fr 1fr 1fr 100px;
+
 
 }
+.section__nuevo
+{
+   
+   grid-area: nuevo;
 
-#banner{
+}
+.section__juegosdes {
+   
+   grid-area: juegosdes;
+}
+.section__comunidad 
+{
+   grid-area: comunidad;
+  
+
+}
+.section__aside 
+{
+   
+   grid-area: aside;
+}
+.section__eventos 
+{
+   grid-area: eventos;
+}
+
+
+.banner{
    /* margin: 0; padding: 0%; */
+   grid-area: banner;
    width: 100%;
    padding: 9rem 3rem; 
    background: url(./Resources/Bannerkaizen.jpg);
@@ -51,8 +106,89 @@ video {width: 80%;}
    margin: 1%;
    padding: 1%;
 }
+/* ------------Contenedores----------- */
+.contenedor__general
+{
+   background-color: rgba(109, 109, 109, 0.658);
+   display: flex;
+   flex-wrap: wrap;
+   border-radius: 10px;
+}
+.carta__general
+{
+   display: flex;
+   flex-direction: column;
+   background-color: rgba(129, 125, 125, 0.623);
+   margin: 10px;
+   width: 30%;
+   justify-content: space-between;
+   align-items: center;
+   border-radius: 10px;
+}
+.nuevo_imagenes
+{
+   width: 300px;
+   padding: 10px;
+   justify-content: space-between;
 
 
+}
+
+.contenedor__juegosdes {
+   background-color: rgba(109, 109, 109, 0.658);
+   padding: 10px 10px;
+   display: flex;
+   border-radius: 10px;
+   /* flex-wrap: wrap;
+   justify-content: center;
+   align-items: center; */
+   
+   
+}
+/* .carta__juegosdes 
+{
+   display: flex;
+   flex-direction: column;
+   background-color: rgba(129, 125, 125, 0.623);
+   margin: 10px;
+   width: 30%;
+   justify-content: space-between;
+   align-items: center;
+}
+.carta__contenido {
+   padding: 30px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   background-color: rgba(211, 211, 211, 0.658);
+   color: black;
+   height: 200px;
+   width: 100%;
+} */
+.carta__img {
+   width: 40%;
+   height: 200px;
+}
+iframe {
+
+   width: 400px;
+   height: 315px;
+   display: flex;
+   flex-wrap: wrap;
+
+}
+.leyendas__index 
+{
+   display: flex;
+   justify-content: space-between;
+   align-content:flex-start;
+   padding: 10px 20px;
+   background-color: rgba(211, 211, 211, 0.658)
+}
+.img__juegosindex{
+   justify-content: space-between;
+   align-content: flex-end;
+}
 
 
 /* ------------------- Menu Header ------------------------*/
@@ -61,6 +197,7 @@ nav ul li:hover{background-color: #0099cc;
 
 .contenedor 
 {
+   grid-area: header;
  width: 100%;
  height: 60px;
  background: rgba(65, 65, 65, 0.432);
@@ -108,14 +245,8 @@ list-style-type: none;
 }
 
 /* ----------------------  Footer  -----------------------*/
-.fondo_body{
-   background: rgba(185, 185, 185, 0.705);
-   width: 100%;
-   height: 200vh;
-   border-radius: 5px;
-   
-   
-}
+
+
 
 .footer{
    display: flex;
@@ -140,7 +271,7 @@ padding: 10px;
 
 aside
 {
- width: 15%;
+ width: 150px;
  background: #33ffff75;
  padding: 10px;
  float: right;
@@ -170,6 +301,7 @@ border-radius: 10px;
 
 /* ---------------------Titulos,subtitulos y textos--------------*/
 
+
 .titulo{
 
    display: flex;
@@ -178,6 +310,14 @@ border-radius: 10px;
    justify-content: center;
    align-content: center;
 
+}
+.titulo__index 
+{
+   display: flex;
+   font-size: 30px;
+   justify-content: left;
+   align-content: flex-start;
+   margin: 40px;
 }
 
 .subtitulo
@@ -275,7 +415,7 @@ width: auto;
    justify-content: space-between;
    align-content: center;
    padding: 10px 20px;
-   background-color: whitesmoke;
+   background-color: rgba(211, 211, 211, 0.658)
 }
 .leyendas__contenido{
    padding: 20px;
