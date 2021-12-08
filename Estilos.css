@@ -12,13 +12,29 @@ video {width: 80%;}
 
 
 /* ------Grids-------- */
-footer
+
+
+.grid__relog
 {
-   grid-area: footer;
+ display: grid;
+ grid-template-areas:
+ "header header header"
+ ".   formulario ."
+ "footer footer footer";
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 150px 365px 150px;
 }
-header {
-   grid-area: header;
+#grid__bibliotecajuegos 
+{
+   display: grid;
+   grid-template-areas: 
+   "header header"
+   "biblioteca categorias"
+   "footer footer";
+   grid-template-columns: 1fr 150px;
+   grid-template-rows: 100px 1fr 150px;
 }
+
 #grid__foro 
 {
    display: grid;
@@ -45,6 +61,18 @@ header {
 
 
 }
+.seccion__relog
+{
+   grid-area: formulario;
+}
+
+.seccion__categoria
+{
+   grid-area: cetegorias;
+}
+
+  
+
 .section__nuevo
 {
    
@@ -70,7 +98,13 @@ header {
 {
    grid-area: eventos;
 }
-
+footer
+{
+   grid-area: footer;
+}
+header {
+   grid-area: header;
+}
 
 .banner{
    /* margin: 0; padding: 0%; */
@@ -113,6 +147,19 @@ header {
    display: flex;
    flex-wrap: wrap;
    border-radius: 10px;
+}
+
+.contenedor__relog 
+{
+   background-color: rgba(109, 109, 109, 0.658);
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   border-radius: 10px;
+   padding: 20px;
+   margin: 10px;
 }
 .carta__general
 {
@@ -248,7 +295,7 @@ list-style-type: none;
 
 
 
-.footer{
+.footer__contenedor{
    display: flex;
    justify-content: right;
    align-content: space-between;
@@ -306,7 +353,7 @@ border-radius: 10px;
 
    display: flex;
    font-size: 36px;
-   
+   margin: 10px;
    justify-content: center;
    align-content: center;
 
@@ -329,6 +376,16 @@ border-radius: 10px;
    align-content: center;
    margin: 10px;
 
+}
+.subtitulo__registro
+{
+   display: flex;
+   flex-wrap: wrap;
+   font-size: 20px;
+   
+   justify-content: center;
+   align-content: center;
+   margin: 20px;
 }
 .texto 
 {
@@ -364,7 +421,7 @@ border-radius: 10px;
 display: flex;
 justify-content: center;
 align-content: center;
-margin-top: 50px;
+margin-top: 25px;
 height: auto;
 width: auto;
 
@@ -391,11 +448,11 @@ width: auto;
    margin-left: 87%;
   padding: 10px;
   border-radius: 10px;
-  background-color: #ffff33a2;
+  background-color: rgba(109, 109, 109, 0.658);
 }
 /*columna de juegos*/
 .juegos_orden{
-   background: #ffff33a2;
+   background-color: rgba(109, 109, 109, 0.658);
    display: flex;
    flex-wrap: wrap;
    flex-direction: column;
