@@ -10,6 +10,11 @@ body {
 }
 video {width: 80%;}
 
+.container 
+{
+   background-color: rgba(109, 109, 109, 0.658);
+}
+
 
 /* ------Grids-------- */
 
@@ -140,6 +145,17 @@ header {
    margin: 1%;
    padding: 1%;
 }
+/* ---------------------imagenes ---------------*/
+.image__sm {
+   width: 250px;
+   height: 250px;
+}
+.image__md 
+{
+   width: 400px;
+   height: 350px;
+}
+
 /* ------------Contenedores----------- */
 .contenedor__general
 {
@@ -265,10 +281,17 @@ nav ul li:hover{background-color: #0099cc;
    align-content: center;
    width: 75%;
 }
+
 .header__link{
 
 list-style-type: none;
 
+}
+.header__link:hover
+{
+   transform: scale(2);
+   background-color: aqua;
+   border-radius: 10px;
 }
 
 .header__link a{
@@ -277,15 +300,26 @@ list-style-type: none;
    text-decoration: none;
    color:rgb(0, 0, 0);
    background-color: #ff9933;
+   transform: scale(0.5,5);
   
    border-radius: 7px;
    
 }
 
 .header__logo{
+   
+   
    width: 150px;
+   transition: width 2s, height 2s, transform 1s;
    margin: 1%
    
+   
+}
+.header__logo:hover
+{
+   transform: translate(100px) scale(2) rotate(360deg) ;
+   background-color: rgba(109, 109, 109, 0.658);
+   border-radius: 5px;
 }
 .header__logo img{
    width: 100%;
