@@ -21,9 +21,14 @@ video {width: 80%;}
 .margintop__100px {
    margin-top: 100px;
 }
-
-.rounded {
-   border-radius: 20px;
+.margintop__25px{
+   margin-top: 25px;
+}
+.carrousel__tamañoch{
+   width: 50%;
+}
+.carrousel__tamañomd{
+   width: 75%;
 }
 
 
@@ -160,11 +165,17 @@ header {
 .image__sm {
    width: 250px;
    height: 250px;
+   flex: auto;
+   
 }
 .image__md 
 {
    width: 400px;
    height: 350px;
+}
+.image__lg{
+   width: 750px;
+   height: 325px;
 }
 .image__aside 
 {
