@@ -17,7 +17,10 @@ video {width: 80%;}
    padding: 15px;
    width: auto;
 }
-
+.margintop__250px
+{
+   margin-top: 250px;
+}
 .margintop__100px {
    margin-top: 100px;
 }
@@ -59,13 +62,27 @@ video {width: 80%;}
 #grid__foro 
 {
    display: grid;
-   grid-template-areas: "header  header"
-   "foro  aside"
-   "posteosre  aside"
-   "footer  footer";
+   grid-template-areas: "header  header header"
+   "posteosre posteore aside"
+   "foro  foro aside"
+   "footer footer footer";
    grid-template-columns: 1fr 150px;
-   grid-template-rows:100px 1fr  150px ;
+   grid-template-rows:100px 1fr  1fr 150px ;
 }
+.seccion__posteosre
+{
+   grid-area: posteosre;
+}
+.seccion__foro
+{
+grid-area: foro;
+}
+.seccion__aside
+{
+   grid-area: aside;
+}
+
+
 .grid__template 
 {display: grid;
    grid-template-areas: 
@@ -182,6 +199,7 @@ header {
    width: 100%;
    height: 30rem;
 }
+
 
 /* ------------Contenedores----------- */
 .contenedor__general
@@ -382,6 +400,11 @@ align-content: center;
 height: 50px;
 width: 50px;
 padding: 10px;
+}
+.footer__redessociales:hover
+{
+background-color: aqua;
+border-radius: 5px;
 }
 /*--------------------------  Asides  -------------------------*/
 
