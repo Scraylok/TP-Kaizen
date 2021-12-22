@@ -34,6 +34,11 @@ video {width: 80%;}
    width: 75%;
 }
 
+a :hover
+{
+   color: rgb(48, 180, 163);
+}
+
 
 /* ------Grids-------- */
 
@@ -115,11 +120,13 @@ grid-area: foro;
 {
    
    grid-area: nuevo;
+   flex-wrap: wrap;
 
 }
 .section__juegosdes {
    
    grid-area: juegosdes;
+   flex-wrap: wrap;
 }
 .section__comunidad 
 {
@@ -135,6 +142,7 @@ grid-area: foro;
 .section__eventos 
 {
    grid-area: eventos;
+   flex-wrap: wrap;
 }
 footer
 {
@@ -179,6 +187,15 @@ header {
    padding: 1%;
 }
 /* ---------------------imagenes ---------------*/
+
+.image__xs 
+{
+   width: 100px;
+   height: 100px;
+   flex: auto;
+   border-radius: 50px;
+}
+
 .image__sm {
    width: 250px;
    height: 250px;
@@ -189,15 +206,18 @@ header {
 {
    width: 400px;
    height: 350px;
+   flex: auto;
 }
 .image__lg{
    width: 750px;
    height: 325px;
+   flex: auto;
 }
 .image__aside 
 {
    width: 100%;
    height: 30rem;
+   flex: auto;
 }
 
 

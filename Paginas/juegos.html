@@ -12,7 +12,7 @@
 </head>
 <body>
     <!--Menu-->
-    <header class="contenedor">
+    <header class="contenedor d-flex flex-wrap">
         
         <div class="contenedor">
             <nav class="contenedor">
@@ -39,10 +39,14 @@
         
     <main>
         <!--Selector de categoria-->
-        <div class="subtitulo"><h1>Nuestros juegos</h1></div>
+
+        <div class="subtitulo margintop__100px"><h1>Nuestros juegos</h1></div>
+        <div class="container-fluid align-items-end d-flex flex-wrap">
+
+            
         <section> 
         <form  action="">
-            <div class="juegos_categorias">
+            <div class="juegos_categorias d-flex flex-wrap d-flex justify-content-start">
             <legend>Seleccionar Categorias</legend>
             <select name="categorias" id="">
 
@@ -56,6 +60,9 @@
 
         </div>
     </form>
+
+        </div>
+        
 </section>
 <!--Biblioteca de juegos-->
 <div>
