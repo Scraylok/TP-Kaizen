@@ -1,0 +1,481 @@
+@charset "UTF-8";
+* {
+  margin: 0%;
+  padding: 0%; }
+
+body {
+  background: url(./Resources/5053309.jpg);
+  color: white; }
+
+.cuerpo {
+  width: 80%;
+  margin: 50px; }
+
+video {
+  width: 80%; }
+
+.container {
+  background-color: rgba(109, 109, 109, 0.658);
+  border-radius: 10px;
+  padding: 15px;
+  width: auto; }
+
+.margintop__250px {
+  margin-top: 250px; }
+
+.margintop__100px {
+  margin-top: 100px; }
+
+.margintop__25px {
+  margin-top: 25px; }
+
+.carrousel__tamañoch {
+  width: 50%; }
+
+.carrousel__tamañomd {
+  width: 75%; }
+
+a :hover {
+  color: #30b4a3; }
+
+/* ------Grids-------- */
+.grid__relog {
+  display: grid;
+  grid-template-areas: "header header header" ".   formulario ." "footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 150px 365px 150px; }
+
+#grid__bibliotecajuegos {
+  display: grid;
+  grid-template-areas: "header header" "biblioteca categorias" "footer footer";
+  grid-template-columns: 1fr 150px;
+  grid-template-rows: 100px 1fr 150px; }
+
+#grid__foro {
+  display: grid;
+  grid-template-areas: "header  header header" "posteosre posteore aside" "foro  foro aside" "footer footer footer";
+  grid-template-columns: 1fr 150px;
+  grid-template-rows: 100px 1fr  1fr 150px; }
+
+.seccion__posteosre {
+  grid-area: posteosre; }
+
+.seccion__foro {
+  grid-area: foro; }
+
+.seccion__aside {
+  grid-area: aside; }
+
+.grid__template {
+  display: grid;
+  grid-template-areas: "banner banner" "header header" "nuevo aside" "juegosdes aside" "eventos aside" "comunidad aside" "footer footer";
+  grid-template-columns: 1fr 150px;
+  grid-template-rows: 400px 75px 1fr 1fr 1fr 1fr 100px; }
+
+.seccion__relog {
+  grid-area: formulario; }
+
+.seccion__categoria {
+  grid-area: cetegorias; }
+
+.section__nuevo {
+  grid-area: nuevo;
+  flex-wrap: wrap; }
+
+.section__juegosdes {
+  grid-area: juegosdes;
+  flex-wrap: wrap; }
+
+.section__comunidad {
+  grid-area: comunidad; }
+
+.section__aside {
+  grid-area: aside; }
+
+.section__eventos {
+  grid-area: eventos;
+  flex-wrap: wrap; }
+
+footer {
+  grid-area: footer; }
+
+header {
+  grid-area: header; }
+
+.banner {
+  /* margin: 0; padding: 0%; */
+  grid-area: banner;
+  width: 100%;
+  padding: 9rem 3rem;
+  background: url(./Resources/Bannerkaizen.jpg);
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  background-position: top;
+  box-sizing: border-box; }
+  .banner:h1 {
+    color: whitesmoke; }
+
+.seccion {
+  background: rgba(211, 211, 211, 0.705);
+  margin: 1%;
+  padding: 1%; }
+
+/* ---------------------imagenes ---------------*/
+.image__xs {
+  width: 100px;
+  height: 100px;
+  flex: auto;
+  border-radius: 50px; }
+
+.image__sm {
+  width: 250px;
+  height: 250px;
+  flex: auto; }
+
+.image__md {
+  width: 400px;
+  height: 350px;
+  flex: auto; }
+
+.image__lg {
+  width: 750px;
+  height: 325px;
+  flex: auto; }
+
+.image__aside {
+  width: 100%;
+  height: 30rem;
+  flex: auto; }
+
+/* ------------Contenedores----------- */
+.contenedor__general {
+  background-color: rgba(109, 109, 109, 0.658);
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px; }
+
+.contenedor__relog {
+  background-color: rgba(109, 109, 109, 0.658);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px; }
+
+.carta__general {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(129, 125, 125, 0.623);
+  margin: 10px;
+  width: 30%;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  transition: width 2s, height 2s, transform 0.5s; }
+  .carta__general:hover {
+    transform: scale(1.2);
+    background-color: #ff9933; }
+
+.nuevo_imagenes {
+  width: 300px;
+  padding: 10px;
+  justify-content: space-between; }
+
+.contenedor__juegosdes {
+  background-color: rgba(109, 109, 109, 0.658);
+  padding: 10px 10px;
+  display: flex;
+  border-radius: 10px; }
+
+.carta__img {
+  width: 40%;
+  height: 200px; }
+
+iframe {
+  width: 400px;
+  height: 315px;
+  display: flex;
+  flex-wrap: wrap; }
+
+.leyendas__index {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  padding: 10px 20px;
+  background-color: rgba(211, 211, 211, 0.658); }
+
+.img__juegosindex {
+  justify-content: space-between;
+  align-content: flex-end; }
+
+/* ------------------- Menu Header ------------------------*/
+nav ul li:hover {
+  background-color: #0099cc; }
+
+.contenedor {
+  position: fixed;
+  grid-area: header;
+  width: 100%;
+  height: 60px;
+  background: rgba(65, 65, 65, 0.432);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  box-sizing: border-box;
+  top: 20px;
+  bottom: 50px;
+  border-radius: 10px; }
+
+header {
+  grid-area: header; }
+  header__lista {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 75%; }
+  header__link {
+    list-style-type: none; }
+    header__link:hover {
+      transform: scale(2);
+      background-color: aqua;
+      border-radius: 10px; }
+    header__linka {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 23px;
+      text-decoration: none;
+      color: black;
+      background-color: #ff9933;
+      transform: scale(0.5, 5);
+      border-radius: 7px; }
+
+/* header inicio */
+.header__logo {
+  width: 150px;
+  transition: width 2s, height 2s, transform 1s; }
+  .header__logo:hover {
+    transform: translate(100px) scale(1) rotate(360deg);
+    background-color: rgba(109, 109, 109, 0.658);
+    border-radius: 5px; }
+  .header__logo__img {
+    width: 100%; }
+
+/* ----------------------  Footer  -----------------------*/
+.footer__contenedor {
+  display: flex;
+  justify-content: right;
+  align-content: space-between;
+  background-color: #7e7e7ed4;
+  width: auto;
+  height: 10vh;
+  border-radius: 10px;
+  margin-top: 100px; }
+
+.footer__redessociales {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 50px;
+  width: 50px;
+  padding: 10px; }
+  .footer__redessociales:hoover {
+    background-color: aqua; }
+
+/*--------------------------  Asides  -------------------------*/
+aside {
+  width: 150px;
+  background: #33ffff75;
+  padding: 10px;
+  float: right;
+  height: 500px;
+  margin-right: 10px;
+  margin-top: 100px;
+  border-radius: 10px; }
+  aside_orden {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-content: space-between;
+    color: black;
+    padding: 0%; }
+  aside__lista {
+    justify-content: space-between; }
+
+/* ---------------------Titulos,subtitulos y textos--------------*/
+.titulo {
+  display: flex;
+  font-size: 40px;
+  justify-content: left;
+  align-content: flex-start;
+  margin: 100px; }
+
+.titulo__index {
+  display: flex;
+  font-size: 60px;
+  justify-content: left;
+  align-content: flex-start;
+  margin: 40px; }
+
+.subtitulo {
+  display: flex;
+  font-size: 25px;
+  justify-content: center;
+  align-content: center;
+  margin: 10px; }
+
+.subtitulo__registro {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  justify-content: center;
+  align-content: center;
+  margin: 20px; }
+
+.texto {
+  display: flex;
+  font-size: 20px;
+  color: black; }
+
+/*boxes de formularios*/
+.boxes {
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+  align-content: center; }
+  .boxes__grande {
+    display: flex;
+    height: 75px;
+    width: 75;
+    margin: 10px; }
+
+/*---------------- Botones -----------*/
+.boton__login {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 25px;
+  height: auto;
+  width: auto; }
+
+/*---- Estilo Biblioteca de juegos ----*/
+/*biblioteca de juegos*/
+.juegos {
+  display: flex;
+  font-size: 24px;
+  justify-content: center;
+  align-content: center; }
+
+/* selector categoria*/
+.juegos_categorias {
+  display: flex;
+  align-content: center;
+  justify-content: right;
+  width: 200px;
+  margin-bottom: 1%;
+  margin-left: 87%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(109, 109, 109, 0.658); }
+
+/*columna de juegos*/
+.juegos_orden {
+  background-color: rgba(109, 109, 109, 0.658);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: flex-start;
+  padding: 10px; }
+
+/*imagenes de juegos*/
+.juegos_imgs {
+  width: 175px;
+  height: 250px; }
+
+/*Titulos y sinopsis*/
+.leyendas {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 10px 20px;
+  background-color: rgba(211, 211, 211, 0.658); }
+  .leyendas__contenido {
+    padding: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 150px;
+    width: 100%; }
+  .leyendas__titulo {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black; }
+  .leyendas__sinopsis {
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif; }
+
+/*------------------- Estilo Foro ---------------*/
+/*---------------- Estilo Registro ------------------*/
+#posicion__formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background: rgba(185, 185, 185, 0.705);
+  height: 500px;
+  width: 500px;
+  padding: 75px 50px 100px;
+  margin: auto;
+  border-radius: 10px; }
+
+/*------------------- Estilo acerca de nosotros ------------------*/
+#posicion__nosotros {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding: 50px; }
+
+.logo__kaizen {
+  display: flex;
+  align-content: flex-end;
+  justify-content: left;
+  height: 15%;
+  width: 20%;
+  background-blend-mode: soft-light; }
+
+/*------------------ Estilo soporte ----------------------*/
+#posicion__soporte {
+  display: flex;
+  justify-content: right;
+  align-content: flex-start;
+  background: rgba(185, 185, 185, 0.705);
+  height: 400px;
+  width: 400px;
+  padding: 25px;
+  margin: 100px 100px;
+  border-radius: 10px; }
+
+.formulario__soporte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; }
+
+/*-------------------------  Estilo Log-in  --------------------*/
+#posicion__login {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: center;
+  background: rgba(185, 185, 185, 0.705);
+  height: auto;
+  width: 300px;
+  padding: 100px 100px;
+  margin-top: 100px;
+  margin-left: 550px;
+  border-radius: 10px; }
