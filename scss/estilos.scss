@@ -8,6 +8,24 @@ $tamañotitulo: 40px;
 $tamañosubtitulo: 25px;
 
 
+$paleta: (
+   "naranja" : #FF9933,
+   "aguamarina" : #33FF99,
+   "amarillo" : #FFFF33,
+   "lima" :#33FF33,
+   "turquesa" : #33FFFF, 
+
+
+);
+@each $colores,$color in $paleta {
+   .fondo--#{$colores}{
+      background-color: $color;
+   }
+
+   
+}
+
+
 
 
 
@@ -223,7 +241,7 @@ header {
 
 
 /* ------------Contenedores----------- */
-.contenedor__general
+@mixin contenedores 
 {
    background-color: $colorgeneral;
    display: flex;
@@ -231,18 +249,28 @@ header {
    border-radius: 10px;
 }
 
+.contenedor__general
+{ @include contenedores($colorgeneral);
+   
+}
+
 .contenedor__relog 
 {
-   background-color:$colorgeneral;
+  @include contenedores($colorgeneral);
    display: flex;
    flex-wrap: wrap;
    flex-direction: column;
    justify-content: space-between;
    align-items: center;
-   border-radius: 10px;
    padding: 20px;
    margin: 10px;
 }
+
+.contenedor__juegosdes {
+   @include contenedores($colorgeneral);
+   padding: 10px 10px;
+}
+
 .carta__general
 {
    display: flex;
@@ -269,15 +297,7 @@ header {
 }
 
 
-.contenedor__juegosdes {
-   background-color: $colorgeneral;
-   padding: 10px 10px;
-   display: flex;
-   border-radius: 10px;
-   
-   
-   
-}
+
 
 .carta__img {
    width: 40%;
@@ -452,10 +472,8 @@ border-radius: 10px;
 }
 .titulo__index 
 {
-   display: flex;
-   font-size: $tamanotitulo__index;
-   justify-content: left;
-   align-content: flex-start;
+   @extend .titulo;
+  
    margin: 40px;
 }
 
